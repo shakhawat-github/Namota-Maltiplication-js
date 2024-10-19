@@ -8,4 +8,7 @@ calculate.addEventListener('click' , ()=>{
     for( a = 1 ; a <=10 ; a++){
         output.innerHTML += `<tr><td>${input.value} x ${a}</td><td>=</td><td>${input.value * a}</td></tr>`
     }
+    if(input.value == ''){
+        output.innerHTML = 'Please Inter Any Number'
+    }
 })
